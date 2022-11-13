@@ -1,0 +1,134 @@
+body {
+    background: linear-gradient(110deg, rgb(14, 203, 236), rgb(242, 231, 23));
+    margin: 0;
+    overflow-x: hidden;
+}
+
+main {
+    margin: 40px;
+}
+
+.grid {
+    display: grid;
+    margin: 15px 0;
+}
+
+.heading-contain {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.header {
+    background-color: #999;
+    color: #222;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.sect-one {
+    grid-template-areas: "sec1 sec1 sec1 sec1 sec1 sec1 sec1 sec1 sec2 sec2 sec2 sec2" "sec1 sec1 sec1 sec1 sec1 sec1 sec1 sec1 sec3 sec3 sec3 sec3" "sec1 sec1 sec1 sec1 sec1 sec1 sec1 sec1 sec3 sec3 sec3 sec3" "sec4 sec4 sec4 sec5 sec5 sec5 sec6 sec6 sec6 sec7 sec7 sec7" "sec8 sec8 sec8 sec8 sec8 sec8 sec8 sec8 sec8 sec8 sec8 sec8" "sec8 sec8 sec8 sec8 sec8 sec8 sec8 sec8 sec8 sec8 sec8 sec8" "sec8 sec8 sec8 sec8 sec8 sec8 sec8 sec8 sec8 sec8 sec8 sec8";
+    gap: 15px;
+}
+
+.sec1 {
+    background-image: url(./images/img2.jpg);
+    background-position: center;
+    grid-area: sec1;
+    display: flex;
+    align-items: center;
+}
+
+.indent {
+    padding-left: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+h1 {
+    /* padding-bottom: 5px; */
+    margin: 20px 0;
+    padding: 3px 7px;
+    background-color: #999;
+}
+
+.indent span {
+    background-color: #999;
+    padding: 7px;
+}
+
+.sec2,
+.sec3 {
+    background-color: #999;
+    padding: 8px;
+}
+
+.sec2 {
+    grid-area: sec2;
+}
+
+.sec3 {
+    grid-area: sec3;
+}
+
+h2,
+h3,
+h4,
+p {
+    text-align: center;
+}
+
+h2 {
+    padding: 15px 0;
+}
+
+h3 {
+    padding: 10px 0;
+}
+
+.sec4,
+.sec5,
+.sec6,
+.sec7,
+.sec8 {
+    background-color: white;
+    padding: 5px 0;
+}
+
+.sec4 {
+    grid-area: sec4;
+}
+
+.sec5 {
+    grid-area: sec5;
+}
+
+.sec6 {
+    grid-area: sec6;
+}
+
+.sec7 {
+    grid-area: sec7;
+}
+
+.sec8 {
+    /* grid-template-columns: 8; */
+    /* grid-template-rows: 3; */
+    background-color: white;
+    grid-area: sec8;
+    /* padding: 10px 0; */
+    display: flex;
+    justify-content: center;
+}
+
+.sect-three {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+}
